@@ -23,4 +23,7 @@ class TImages{
   static const String deliveredEmailIllustration = "assets/image/verifyemail.png";
   static const String verifyEmailIllustration = "assets/image/emailverify.png";
 
+  // Categories
+  static const String sportCategories = "assets/icons/categories/sport.png";
+
 }
