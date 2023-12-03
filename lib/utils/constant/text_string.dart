@@ -28,11 +28,15 @@ class TTexts{
   static const String signInWith = "or sign in with";
   static const String signUpWith = "or sign up with";
   static const String iAgreeTo = "I agree to";
+  static const String and = "and";
   static const String privacyPolicy = "Privacy Policy";
   static const String termOfUse = "Term of use";
   static const String verificationCode = "VerificationCode";
   static const String resendEmail = "Resend E-Mail";
   static const String resendEmailIn = "Resend E-Mail in";
+  static const String tContinue = "Continue";
+  static const String submit = "Submit";
+  static const String done = "Done";
 
   //Authentication heading texts
   static const String loginTitle = "Welcome Back,";
@@ -47,4 +51,8 @@ class TTexts{
   static const String emailNotReceivedMessage = "Didn't get the email? check your junk/spam or resend it";
   static const String yourAccountCreatedTitle = "Your account successfully created";
   static const String yourAccountCreatedSubTitle = "Welcome to your ultimate shopping destination: Your account is created, Unleash the joy of seamless online shopping";
+
+  // --home
+  static const String homeAppbarTitle = "Good day for shopping";
+  static const String homeAppbarSubTitle = "Kuc";
 }

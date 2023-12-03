@@ -1,4 +1,8 @@
+import 'package:e_mart/features/authentication/screens/password_configuration/forget_password.dart';
+import 'package:e_mart/features/authentication/screens/signUpScreen/signUp.dart';
+import 'package:e_mart/navigation_menu.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../utils/constant/sizes.dart';
@@ -53,7 +57,7 @@ class TLoginForm extends StatelessWidget {
 
                 /// Forget Password
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const ForgetPassword()),
                     child: const Text(TTexts.forgetPassword)),
               ],
             ),
@@ -63,7 +67,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(const NavigationMenu()),
                     child: const Text(TTexts.signIn))),
 
             const SizedBox(
@@ -74,7 +78,9 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
                 width: double.infinity,
                 child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(() => const SignUpScreen());
+                    },
                     child: const Text(TTexts.createAccount))),
           ],
         ),
