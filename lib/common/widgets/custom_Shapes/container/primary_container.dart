@@ -24,16 +24,22 @@ class TPrimaryHeaderContainer extends StatelessWidget {
           child: Stack(
             children: [
               Positioned(
-                top : -150,
-                right: -250,
+                top : -10,
+                right: -150,
                 child: TCircularContainer(
+                  width: 300,
+                  height: 300,
+                  radius: 300,
                   background: TColor.textWhite.withOpacity(0.1),
                 ),
               ),
               Positioned(
                 top: 100,
-                right: -300,
+                right: -150,
                 child: TCircularContainer(
+                  width: 300,
+                  height: 300,
+                  radius: 300,
                   background: TColor.textWhite.withOpacity(0.1),
                 ),
               ),

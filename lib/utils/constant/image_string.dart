@@ -26,4 +26,13 @@ class TImages{
   // Categories
   static const String sportCategories = "assets/icons/categories/sport.png";
 
+  // Banner
+  static const String productBanner1 = "assets/image/banner/big-sale-discount.jpg";
+  static const String productBanner2 = "assets/image/banner/manFootWearBanner.jpg";
+  static const String productBanner3 = "assets/image/banner/newly-arrived-product.jpg";
+
+  //product image
+  static const String productImage1 = "assets/image/product image/shoes1.jpg";
+  static const String productImage2 = "assets/image/product image/bruton-trendy-sports-shoes.webp";
+
 }
