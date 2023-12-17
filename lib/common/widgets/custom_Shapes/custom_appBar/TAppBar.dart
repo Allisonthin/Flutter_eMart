@@ -1,3 +1,4 @@
+import 'package:e_mart/utils/device/device_utilities.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -35,8 +36,8 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
     );
   }
-
+  //
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => throw UnimplementedError();
+  Size get preferredSize => Size.fromHeight(TDeviceUtils.getAppBarHeight());
 }

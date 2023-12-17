@@ -3,13 +3,13 @@ import 'package:e_mart/common/widgets/custom_Shapes/container/circular_container
 import 'package:e_mart/common/widgets/images/t_rounded_image.dart';
 import 'package:e_mart/utils/helper/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constant/colors.dart';
 import '../../../../utils/constant/image_string.dart';
 import '../../../../utils/constant/sizes.dart';
 import '../../icon/t_circular_icon.dart';
+import '../../texts/brandTitleWithVerifiedIcon.dart';
 import '../../texts/productPrice.dart';
 import '../../texts/t_product_title.dart';
 
@@ -80,66 +80,55 @@ class TProductCartVertical extends StatelessWidget {
             ),
 
             /// details
-            Padding(
-              padding: const EdgeInsets.all(TSize.sm),
+            const Padding(
+              padding: EdgeInsets.all(TSize.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const TProductTitle(
+                  TProductTitle(
                     title: 'Blue shoes Nike',
                     smallSize: true,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     height: TSize.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        style: Theme.of(context).textTheme.labelMedium,
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                      ),
-                      const SizedBox(
-                        height: TSize.sm,
-                      ),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColor.primary,
-                        size: TSize.iconXs,
-                      )
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      /// Price
-                      const TProductPriceText(
-                        price: '35',
-                      ),
-
-                      /// Add to cart button
-                      Container(
-                        decoration: const BoxDecoration(
-                            color: TColor.dark,
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(TSize.cardRadiusMd),
-                                bottomRight:
-                                    Radius.circular(TSize.productImageRadius))),
-                        child: const SizedBox(
-                            width: TSize.iconLg * 1.2,
-                            height: TSize.iconLg * 1.2,
-                            child: Center(
-                              child: Icon(
-                                Iconsax.add,
-                                color: TColor.white,
-                              ),
-                            )),
-                      )
-                    ],
-                  )
+                  TBrandTitleWithVerifiedIcon(title: 'Nike',),
                 ],
               ),
+            ),
+            /// Spacer() here  to keep  the height of each box same in case 1 or 2  line of heading
+            const Spacer(),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                /// Price
+                const Padding(
+                  padding: EdgeInsets.only(left: TSize.sm),
+                  child: TProductPriceText(
+                    price: '35',
+                  ),
+                ),
+
+                /// Add to cart button
+                Container(
+                  decoration: const BoxDecoration(
+                      color: TColor.dark,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(TSize.cardRadiusMd),
+                          bottomRight:
+                          Radius.circular(TSize.productImageRadius))),
+                  child: const SizedBox(
+                      width: TSize.iconLg * 1.2,
+                      height: TSize.iconLg * 1.2,
+                      child: Center(
+                        child: Icon(
+                          Iconsax.add,
+                          color: TColor.white,
+                        ),
+                      )),
+                )
+              ],
             )
           ],
         ),
@@ -147,4 +136,6 @@ class TProductCartVertical extends StatelessWidget {
     );
   }
 }
+
+
 

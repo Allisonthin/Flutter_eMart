@@ -24,7 +24,12 @@ class TImages{
   static const String verifyEmailIllustration = "assets/image/emailverify.png";
 
   // Categories
-  static const String sportCategories = "assets/icons/categories/sport.png";
+  static const String sportCategories = "assets/icons/categories/sports.png";
+  static const String shirtCategories = "assets/icons/categories/tshirt.png";
+  static const String shoesCategories = "assets/icons/categories/sneakers.png";
+  static const String watchCategories = "assets/icons/categories/watch.png";
+  static const String electronicCategories = "assets/icons/categories/responsive.png";
+  static const String furnitureCategories = "assets/icons/categories/furnitures.png";
 
   // Banner
   static const String productBanner1 = "assets/image/banner/big-sale-discount.jpg";
@@ -34,5 +39,14 @@ class TImages{
   //product image
   static const String productImage1 = "assets/image/product image/shoes1.jpg";
   static const String productImage2 = "assets/image/product image/bruton-trendy-sports-shoes.webp";
+  static const String productImageNike1 = "assets/image/product image/nike_hoddies-removebg-preview.png";
+  static const String productImageNike2 = "assets/image/product image/nike_pant-removebg-preview.png";
+  static const String productImageNike3 = "assets/image/product image/nike_shoes-removebg-preview.png";
+
+  //brands
+  static const String brandImage1 = "assets/icons/brands/laundry.png";
+
+  // profile
+  static const String profileImage = "assets/image/Profile/profile_image-removebg-preview.png";
 
 }

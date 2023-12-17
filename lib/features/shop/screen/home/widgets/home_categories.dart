@@ -12,6 +12,8 @@ class THomeCategories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final imageList = [TImages.sportCategories, TImages.shoesCategories, TImages.watchCategories, TImages.shirtCategories, TImages.electronicCategories,TImages.furnitureCategories];
+    final imageTitle = ["Sports", "Shoes", "Watch", "Shirts", "Electronic", "Furniture"];
     return Padding(
       padding: const EdgeInsets.only(left: TSize.defaultSpace),
       child: Column(
@@ -32,9 +34,9 @@ class THomeCategories extends StatelessWidget {
             child: ListView.builder(
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
-                itemCount: 10,
+                itemCount: 6,
                 itemBuilder: (_, index) {
-                  return TVerticalImage(image: TImages.sportCategories, title: 'sports', onTap: (){},);
+                  return TVerticalImage(image: imageList[index], title: imageTitle[index], onTap: (){},);
                 }),
           )
         ],

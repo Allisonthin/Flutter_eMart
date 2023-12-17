@@ -27,6 +27,7 @@ class THelperFunction {
     else if (value == "Black"){
       return Colors.black;
     }
+    return null;
   }
 
   static void showSnackBar(String message){

@@ -1,14 +1,8 @@
 import 'package:e_mart/features/authentication/controller/onBoarding_controller.dart';
-import 'package:e_mart/utils/constant/colors.dart';
 import 'package:e_mart/utils/constant/image_string.dart';
-import 'package:e_mart/utils/constant/sizes.dart';
 import 'package:e_mart/utils/constant/text_string.dart';
-import 'package:e_mart/utils/device/device_utilities.dart';
-import 'package:e_mart/utils/helper/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'Widget/onboarding_dotnavigation.dart';
 import 'Widget/onboarding_nextbutton.dart';
 import 'Widget/onboarding_page.dart';
