@@ -45,8 +45,15 @@ class TImages{
 
   //brands
   static const String brandImage1 = "assets/icons/brands/laundry.png";
+  static const String nike = "assets/icons/brands/nike-removebg-preview.png";
+
 
   // profile
   static const String profileImage = "assets/image/Profile/profile_image-removebg-preview.png";
+
+  // nike shoes
+  static const String nikeshoes1 = "assets/image/product image/nike air force/background remover/main_image-removebg-preview.png";
+  static const String nikeshoes2 = "assets/image/product image/nike air force/background remover/n2-removebg-preview.png";
+  static const String nikeshoes3 = "assets/image/product image/nike air force/background remover/n3-removebg-preview.png";
 
 }

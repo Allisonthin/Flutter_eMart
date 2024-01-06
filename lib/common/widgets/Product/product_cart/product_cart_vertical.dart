@@ -1,8 +1,10 @@
 import 'package:e_mart/common/style/shadow.dart';
 import 'package:e_mart/common/widgets/custom_Shapes/container/circular_container.dart';
 import 'package:e_mart/common/widgets/images/t_rounded_image.dart';
+import 'package:e_mart/features/shop/screen/product_details/product_detail.dart';
 import 'package:e_mart/utils/helper/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/constant/colors.dart';
@@ -21,7 +23,7 @@ class TProductCartVertical extends StatelessWidget {
     final dark = THelperFunction.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetail()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),

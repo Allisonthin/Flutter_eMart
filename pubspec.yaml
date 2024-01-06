@@ -89,6 +89,8 @@ flutter:
     - assets/image/product image/
     - assets/icons/brands/
     - assets/image/Profile/
+    - assets/image/product image/nike air force/
+    - assets/image/product image/nike air force/background remover/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

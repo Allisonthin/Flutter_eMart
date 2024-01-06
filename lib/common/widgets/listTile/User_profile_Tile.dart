@@ -1,4 +1,6 @@
+import 'package:e_mart/features/personalisation/screens/Profile/profile.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../utils/constant/colors.dart';
@@ -21,7 +23,7 @@ class TUserProfileTile extends StatelessWidget {
       ),
       title: Text("Kuc", style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColor.white),),
       subtitle: Text("kuc@gmail.com", style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColor.white),),
-      trailing: IconButton(onPressed: (){}, icon: const Icon(Iconsax.edit, color: TColor.white,),),
+      trailing: IconButton(onPressed: () => Get.to(const ProfileScreen()), icon: const Icon(Iconsax.edit, color: TColor.white,),),
     );
   }
 }

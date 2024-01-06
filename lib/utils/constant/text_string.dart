@@ -55,4 +55,6 @@ class TTexts{
   // --home
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Kuc";
+  static const String profileImageChange = "Change Profile Picture";
+
 }
