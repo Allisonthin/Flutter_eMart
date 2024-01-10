@@ -27,6 +27,9 @@ class THelperFunction {
     else if (value == "Black"){
       return Colors.black;
     }
+    else if (value == "Yellow"){
+      return Colors.yellow;
+    }
     return null;
   }
 
