@@ -2,7 +2,12 @@ import 'package:e_mart/common/widgets/custom_Shapes/container/primary_container.
 import 'package:e_mart/common/widgets/custom_Shapes/custom_appBar/TAppBar.dart';
 import 'package:e_mart/common/widgets/listTile/Setting_menu_Tile.dart';
 import 'package:e_mart/common/widgets/texts/section_heading.dart';
+import 'package:e_mart/data/repositories/authentication/authentication_repository.dart';
+import 'package:e_mart/features/personalisation/screens/Address/address.dart';
+import 'package:e_mart/features/shop/screen/cart/cart.dart';
+import 'package:e_mart/features/shop/screen/order/order.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/listTile/User_profile_Tile.dart';
@@ -55,9 +60,9 @@ class SettingScreen extends StatelessWidget {
                   const SizedBox(
                     height: TSize.spaceBtwItems,
                   ),
-                  TSettingMenuTile(icon: Iconsax.safe_home, title: "My Address", subTitle: "Set Shopping Address", onTap: () {},),
-                  TSettingMenuTile(icon: Iconsax.shopping_cart, title: "My Cart", subTitle: "Add, remove product and move to checkout", onTap: () {},),
-                  TSettingMenuTile(icon: Iconsax.bag_tick, title: "My Order", subTitle: "In-progress and completed orders", onTap: () {},),
+                  TSettingMenuTile(icon: Iconsax.safe_home, title: "My Address", subTitle: "Set Shopping Address", onTap: () => Get.to(const UserAddressScreen()),),
+                  TSettingMenuTile(icon: Iconsax.shopping_cart, title: "My Cart", subTitle: "Add, remove product and move to checkout", onTap: () => Get.to(const CartScreen()),),
+                  TSettingMenuTile(icon: Iconsax.bag_tick, title: "My Order", subTitle: "In-progress and completed orders", onTap: () => Get.to(const OrderScreen()),),
                   TSettingMenuTile(icon: Iconsax.bank, title: "Bank Account", subTitle: "Withdraw balance to registered bank account", onTap: () {},),
                   TSettingMenuTile(icon: Iconsax.discount_shape, title: "My Coupons", subTitle: "List of all discounted coupons", onTap: () {},),
                   TSettingMenuTile(icon: Iconsax.notification, title: "Notification", subTitle: "Set any kind of notification message", onTap: () {},),
@@ -74,7 +79,7 @@ class SettingScreen extends StatelessWidget {
 
                   /// logout button
                   const SizedBox(height: TSize.spaceBtwSections,),
-                  SizedBox(width: double.infinity, child: OutlinedButton(onPressed: (){}, child: const Text("Logout"))),
+                  SizedBox(width: double.infinity, child: OutlinedButton(onPressed: ()=> AuthenticationRepository.instance.logout(), child: const Text("Logout"))),
                   const SizedBox(height: TSize.spaceBtwSections * 2.5,),
                 ],
               ),

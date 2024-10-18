@@ -3,11 +3,11 @@
 class TImages{
 
   //AppLogo
-  static const String darkAppLogo = "assets/icons/logo.png";
+  static const String darkAppLogo = "assets/logo/Kuc.png";
   static const String lightAppLogo = "assets/icons/logo_transparent.png";
 
   //Social Logo
-  static const String google = "assets/logo/google_logo.png";
+  static const String google = "assets/logo/download-removebg-preview.png";
   static const String facebook = "assets/logo/Facebook_Logo_(2019).png";
 
   //onboarding images
@@ -23,6 +23,11 @@ class TImages{
   static const String deliveredEmailIllustration = "assets/image/verifyemail.png";
   static const String verifyEmailIllustration = "assets/image/emailverify.png";
 
+  // lotties animation
+
+  static const String docerAnimation = "assets/splash_image/docer.json";
+  static const String successRegisterAnimation = "assets/image/lotties_animation/successRegister.json";
+
   // Categories
   static const String sportCategories = "assets/icons/categories/sports.png";
   static const String shirtCategories = "assets/icons/categories/tshirt.png";
@@ -35,6 +40,16 @@ class TImages{
   static const String productBanner1 = "assets/image/banner/big-sale-discount.jpg";
   static const String productBanner2 = "assets/image/banner/manFootWearBanner.jpg";
   static const String productBanner3 = "assets/image/banner/newly-arrived-product.jpg";
+
+  // payment
+  static const String applePay = "assets/icons/payment/applepay.png";
+  static const String googlePay = "assets/icons/payment/googlepay.png";
+  static const String paypal = "assets/icons/payment/paypal.png";
+  static const String paytm = "assets/icons/payment/paytm.png";
+  static const String masterCard = "assets/icons/payment/master_card-removebg-preview.png";
+  static const String creditCard = "assets/icons/payment/credit card.png";
+  static const String visa = "assets/icons/payment/visa.png";
+  static const String paymentSuccess = "assets/icons/payment/payment success.png";
 
   //product image
   static const String productImage1 = "assets/image/product image/shoes1.jpg";

@@ -1,4 +1,4 @@
-import 'package:e_mart/features/authentication/controller/onBoarding_controller.dart';
+import 'package:e_mart/features/authentication/controller/onBoarding/onBoarding_controller.dart';
 import 'package:e_mart/utils/constant/image_string.dart';
 import 'package:e_mart/utils/constant/text_string.dart';
 import 'package:flutter/material.dart';

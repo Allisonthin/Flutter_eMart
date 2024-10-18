@@ -1,4 +1,4 @@
-import 'package:e_mart/features/authentication/controller/onBoarding_controller.dart';
+import 'package:e_mart/features/authentication/controller/onBoarding/onBoarding_controller.dart';
 import 'package:e_mart/utils/helper/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

@@ -38,11 +38,16 @@ dependencies:
 
   #utilities
   http: ^1.1.0
-  intl: ^0.18.1
+  intl: ^0.19.0
   url_launcher: ^6.2.1
+  shimmer: ^3.0.0
   logger: ^2.0.2+1
+  lottie: ^3.0.0
+  image_picker: ^1.0.7
   flutter_native_splash: ^2.3.5
+  connectivity_plus: ^5.0.2
   smooth_page_indicator: ^1.1.0
+  cached_network_image: ^3.3.1
 
   #icons
   iconsax: ^0.0.8
@@ -58,6 +63,13 @@ dependencies:
   carousel_slider: ^4.2.1
   flutter_rating_bar: ^4.0.1
 
+  #firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.17.3
+  cloud_firestore: ^4.15.3
+  firebase_storage: ^11.6.6
+  google_sign_in: ^6.2.1
+
 
   
 
@@ -70,7 +82,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -89,6 +101,7 @@ flutter:
     - assets/logo/
     - assets/image/
     - assets/icons/
+    - assets/icons/payment/
     - assets/icons/categories/
     - assets/image/banner/
     - assets/image/product image/
@@ -96,6 +109,7 @@ flutter:
     - assets/image/Profile/
     - assets/image/product image/nike air force/
     - assets/image/product image/nike air force/background remover/
+    - assets/image/lotties_animation/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

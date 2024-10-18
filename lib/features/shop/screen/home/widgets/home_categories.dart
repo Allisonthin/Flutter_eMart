@@ -1,4 +1,6 @@
+import 'package:e_mart/features/shop/screen/categories/catigories.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../common/widgets/ImageTextWidget/Vertical_Image_Text.dart';
 import '../../../../../common/widgets/texts/section_heading.dart';
@@ -12,8 +14,22 @@ class THomeCategories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final imageList = [TImages.sportCategories, TImages.shoesCategories, TImages.watchCategories, TImages.shirtCategories, TImages.electronicCategories,TImages.furnitureCategories];
-    final imageTitle = ["Sports", "Shoes", "Watch", "Shirts", "Electronic", "Furniture"];
+    final imageList = [
+      TImages.sportCategories,
+      TImages.shoesCategories,
+      TImages.watchCategories,
+      TImages.shirtCategories,
+      TImages.electronicCategories,
+      TImages.furnitureCategories
+    ];
+    final imageTitle = [
+      "Sports",
+      "Shoes",
+      "Watch",
+      "Shirts",
+      "Electronic",
+      "Furniture"
+    ];
     return Padding(
       padding: const EdgeInsets.only(left: TSize.defaultSpace),
       child: Column(
@@ -36,7 +52,11 @@ class THomeCategories extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: 6,
                 itemBuilder: (_, index) {
-                  return TVerticalImage(image: imageList[index], title: imageTitle[index], onTap: (){},);
+                  return TVerticalImage(
+                    image: imageList[index],
+                    title: imageTitle[index],
+                    onTap: () => Get.to(() => const CatigoriesScreen()),
+                  );
                 }),
           )
         ],

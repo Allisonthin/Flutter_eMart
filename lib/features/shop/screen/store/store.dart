@@ -2,9 +2,12 @@ import 'package:e_mart/common/widgets/custom_Shapes/container/search_container.d
 import 'package:e_mart/common/widgets/custom_Shapes/custom_appBar/TAppBar.dart';
 import 'package:e_mart/common/widgets/layouts/gridLayout.dart';
 import 'package:e_mart/common/widgets/texts/section_heading.dart';
+import 'package:e_mart/features/shop/screen/brands/all_brand.dart';
+import 'package:e_mart/features/shop/screen/brands/brand_Product.dart';
 import 'package:e_mart/features/shop/screen/store/widget/categories_tab.dart';
 import 'package:e_mart/utils/helper/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../common/widgets/AppBar/TabBar.dart';
 import '../../../../common/widgets/Brands/brand_card.dart';
@@ -60,7 +63,7 @@ class StoreScreen extends StatelessWidget {
                       /// Featured Branding
                       TSectionHeading(
                         title: "Featured Brands",
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => const AllBrandsScreen()),
                       ),
                       const SizedBox(
                         height: TSize.spaceBtwItems / 1.5,
@@ -71,8 +74,9 @@ class StoreScreen extends StatelessWidget {
                           itemCount: 4,
                           mainAxisExtend: 80,
                           itemBuilder: (_, index) {
-                            return const TBrandCard(
+                            return TBrandCard(
                               showBorder: false,
+                              onTab: () => Get.to(() => const BrandsProduct()),
                             );
                           })
                     ],
