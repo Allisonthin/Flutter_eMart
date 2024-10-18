@@ -1,4 +1,4 @@
-import 'dart:developer';
+// import 'dart:developer';
 
 import 'package:e_mart/data/repositories/authentication/authentication_repository.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -11,15 +11,15 @@ import 'firebase_options.dart';
 import 'my_app.dart';
 
 Future<void> main() async {
-
   /// Add widgets binding
-  final WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  final WidgetsBinding widgetsBinding =
+      WidgetsFlutterBinding.ensureInitialized();
 
   /// Init Get  local storage
   await GetStorage.init();
 
   // todo : Init payment method
-  
+
   /// Await native splash
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
@@ -31,5 +31,3 @@ Future<void> main() async {
   /// load all the material design/ theme / localizations / bindings
   runApp(const App());
 }
-
-
